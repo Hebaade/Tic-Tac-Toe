@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+body{
+    background-color: #f3eaed;
+    font-family: 'Lugrasimo', cursive;
+}
+.btn{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.52);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.12),                0 0 50px rgba(0, 0, 0, 0.12),                0 0 100px rgba(0, 0, 0, 0.12),                0 0 80px rgba(0, 0, 0, 0.12);
+    background-color: #E8FFCE;
+    font-weight: bold;
+    color: #1A5D1A;
+    font-size: 45px;
+    transition:0.5s ;
+    -webkit-transition:0.5s ;
+    -moz-transition:0.5s ;
+    -ms-transition:0.5s ;
+    -o-transition:0.5s ;
+    font-family: inherit;
+    font-weight: bold;
+}
+.red{
+    color:red;
+}
+.btn:hover{
+    border: 1px solid #000;
+}
+@media(max-width:480px){
+    .btn{
+        width: 70px;
+        font-size: 32px;
+        height: 70px;
+    }
+}
+.result strong{
+    font-size: 20px;
+    color: red;
+}
+.container h1{
+    margin-top: 10px;
+}
+.box{
+    width: 70%;
+    margin: 100px auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:480px){
+    .box{
+        margin: 50px auto;
+        width:50%;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+
+}
+@media(max-width:240px){
+   .btn{
+    width: 60px;
+    height: 60px;
+   }
+   .container h1{
+    margin-top: 30px;
+   }
+   .box{
+    margin: 80px auto;
+   }
+   .result{
+    font-size: 20px;
+    display: block;
+   }
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.box p{
+    margin-top: 20px;
+    font-weight: bold;
+}
+#reset{
+    margin-top: 30px;
+    padding: 8px;
+    font-family: inherit;
+    width:80px;
+    background-color: #7C73C0;
+    border: 1px solid #7C73C0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: #625a9e;
+}
