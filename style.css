@@ -11,38 +11,30 @@
     gap: 10px;
 }
 body{
-    background-color: #f3eaed;
+    background-color:#fafffa;
     font-family: 'Lugrasimo', cursive;
 }
 .btn{
     cursor: pointer;
     width: 100px;
     height: 100px;
-    border: 1px solid rgba(0, 0, 0, 0.52);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.12),                0 0 50px rgba(0, 0, 0, 0.12),                0 0 100px rgba(0, 0, 0, 0.12),                0 0 80px rgba(0, 0, 0, 0.12);
-    background-color: #E8FFCE;
+    box-shadow: 2px 4px 4px rgba(206, 169, 169, 0.466);
+    background-color: #335a38;
     font-weight: bold;
-    color: #1A5D1A;
+    color: #fdfdfd;
     font-size: 45px;
-    transition:0.5s ;
-    -webkit-transition:0.5s ;
-    -moz-transition:0.5s ;
-    -ms-transition:0.5s ;
-    -o-transition:0.5s ;
+    border: none;
     font-family: inherit;
     font-weight: bold;
 }
 .red{
     color:red;
 }
-.btn:hover{
-    border: 1px solid #000;
-}
 @media(max-width:480px){
     .btn{
-        width: 70px;
+        width: 80px;
         font-size: 32px;
-        height: 70px;
+        height: 80px;
     }
 }
 .result strong{
@@ -50,11 +42,11 @@ body{
     color: red;
 }
 .container h1{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .box{
     width: 70%;
-    margin: 100px auto;
+    margin: 120px auto;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -63,7 +55,7 @@ body{
 }
 @media(max-width:480px){
     .box{
-        margin: 50px auto;
+        margin: 100px auto;
         width:50%;
     }
     .container h1{
@@ -71,16 +63,21 @@ body{
     }
 
 }
-@media(max-width:240px){
+@media(max-width:280px){
    .btn{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+   }
+   .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
    }
    .container h1{
     margin-top: 30px;
    }
    .box{
-    margin: 80px auto;
+    margin: 90px auto;
    }
    .result{
     font-size: 20px;
@@ -100,8 +97,8 @@ body{
     padding: 8px;
     font-family: inherit;
     width:80px;
-    background-color: #7C73C0;
-    border: 1px solid #7C73C0;
+    background-color: #d1dbd2;
+    border: 1px solid black;
     border-radius: 5px;
     font-weight: bold;
     font-size: larger;
@@ -112,5 +109,7 @@ body{
     cursor: pointer;
 }
 #reset:hover{
-    background-color: #625a9e;
+    background-color: #183b23;
+    border: 1px solid #183b23;
+    color: white;
 }
